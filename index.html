@@ -12,9 +12,17 @@
     <img src="images/charity-water-logo.png" alt="Charity: Water Logo" class="logo" />
     <h1>TRIVIA FOR WATER</h1>
     <img src="images/empty-well.png" alt="Empty well" class="icon" />
+    <div id="difficulty-select">
+      <label for="difficulty">Choose Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy (5 questions)</option>
+        <option value="normal" selected>Normal (7 questions)</option>
+        <option value="hard">Hard (10 questions, 10s/question)</option>
+      </select>
+    </div>
     <p class="progress">0/5 Questions Answered</p>
     <button id="start-btn">Start Quiz</button>
-    <p>Answer 5 questions correctly to fill your well and earn a reward!</p>
+    <p id="goal-text">Answer 5 questions correctly to fill your well and earn a reward!</p>
   </div>
 
   <!-- Quiz Screen -->
