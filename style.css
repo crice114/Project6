@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fef6e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.screen {
+  display: none;
+  max-width: 320px;
+  width: 90%;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.screen.active {
+  display: block;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 16px;
+  max-width: 160px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+button {
+  background-color: #ffd400;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: border 0.2s;
+}
+
+.btn:hover {
+  border-color: #aaa;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.progress {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+img.icon {
+  max-width: 100px;
+  margin: 16px auto;
+  display: block;
+}
+
+#question-counter {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #0077c2;
+}
+
+#question-text {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+#perfect-message {
+  color: #0077c2;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* New: Link styled like button */
+.button-link {
+  display: inline-block;
+  background-color: #ffd400;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 12px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.button-link:hover {
+  background-color: #ffcc00;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 400px) {
+  .screen {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button, .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+
+
+

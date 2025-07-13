@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trivia for Water</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Start Screen --> 
+  <div id="start-screen" class="screen active">
+    <img src="images/charity-water-logo.png" alt="Charity: Water Logo" class="logo" />
+    <h1>TRIVIA FOR WATER</h1>
+    <img src="images/empty-well.png" alt="Empty well" class="icon" />
+    <p class="progress">0/5 Questions Answered</p>
+    <button id="start-btn">Start Quiz</button>
+    <p>Answer 5 questions correctly to fill your well and earn a reward!</p>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen" class="screen">
+    <img src="images/charity-water-logo.png" alt="Charity: Water Logo" class="logo" />
+    <div id="question-counter">Question 1/5</div>
+    <div id="question-text">Loading...</div>
+    <div id="answer-buttons"></div>
+    <div id="feedback"></div>
+  </div>
+
+  <!-- End Screen -->
+  <div id="end-screen" class="screen">
+    <img src="images/charity-water-logo.png" alt="Charity: Water Logo" class="logo" />
+    <img src="images/full-well.png" alt="Full well" class="icon" />
+    <h1 id="end-heading">WELL COMPLETED!</h1>
+    <p id="final-score">You got X out of 5 questions correct.</p>
+    <p id="perfect-message" style="display: none;">Perfect score! You're making a big splash! 💧🏅</p>
+    <a href="https://www.charitywater.org/" target="_blank" class="button-link">Claim Your Reward</a>
+    <button id="play-again-btn">Play Again</button> 
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
